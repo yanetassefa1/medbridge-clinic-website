@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MedBridge Clinic — Smart care. Simple appointments." />
+  <title>MedBridge Clinic | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="MedBridge Clinic home">
+        <img
+          class="brand-logo"
+          src="https://via.placeholder.com/140x60.png?text=MedBridge"
+          alt="MedBridge Clinic logo"
+        />
+      </a>
+
+      <!-- Mobile nav toggle (accessible) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title" class="title">Smart Care. Simple Appointments.</h1>
+          <p class="subtitle">
+            MedBridge Clinic helps patients book visits faster, access helpful resources,
+            and get support with less waiting.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="services.html">Explore Services</a>
+            <a class="btn outline" href="contact.html">Contact Us</a>
+          </div>
+
+          <p class="small-text">Open Monday–Friday • Friendly support • Easy scheduling</p>
+        </div>
+
+        <figure class="card">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1580281658628-6c2f65b6d40d?auto=format&fit=crop&w=1200&q=80"
+            alt="Doctor and patient reviewing health information on a tablet"
+          />
+          <figcaption class="caption">Personalized care with modern tools.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">Welcome to MedBridge Clinic</h2>
+        <p class="section-text">
+          We’re a community-focused clinic combining compassionate care and organized scheduling.
+          Our goal is to make healthcare easier to access and simpler to navigate.
+        </p>
+
+        <div class="grid-3">
+          <article class="info">
+            <h3 class="info-title">Faster Scheduling</h3>
+            <p class="info-text">Clear booking options and reminders to help reduce missed visits.</p>
+          </article>
+          <article class="info">
+            <h3 class="info-title">Patient Resources</h3>
+            <p class="info-text">Forms, basic guides, and clinic information available in one place.</p>
+          </article>
+          <article class="info">
+            <h3 class="info-title">Reliable Support</h3>
+            <p class="info-text">Simple communication to help you prepare for your appointment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p class="footer-text">© <span id="year"></span> MedBridge Clinic</p>
+      <p class="footer-text">
+        <a class="footer-link" href="services.html">Services</a> •
+        <a class="footer-link" href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

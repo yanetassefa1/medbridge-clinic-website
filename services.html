@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MedBridge Clinic services and features." />
+  <title>MedBridge Clinic | Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="MedBridge Clinic home">
+        <img class="brand-logo"
+             src="https://via.placeholder.com/140x60.png?text=MedBridge"
+             alt="MedBridge Clinic logo" />
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html" aria-current="page">Services</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h1 class="title">Our Services</h1>
+      <p class="section-text">
+        MedBridge Clinic provides patient-focused services designed to support preventive care,
+        reduce wait times, and improve appointment organization.
+      </p>
+
+      <section class="section alt" aria-labelledby="service-list-title">
+        <h2 id="service-list-title" class="section-title">Services & Features</h2>
+
+        <ul class="list">
+          <li class="list-item"><strong>Online Appointment Scheduling:</strong> Book visits and receive reminders.</li>
+          <li class="list-item"><strong>Primary Care:</strong> Routine checkups and preventive screenings.</li>
+          <li class="list-item"><strong>Same-Week Visits:</strong> Faster options for non-emergency needs.</li>
+          <li class="list-item"><strong>Patient Resource Center:</strong> Forms and helpful clinic guides.</li>
+          <li class="list-item"><strong>Support Assistance:</strong> Help preparing for your appointment.</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn primary" href="contact.html">Ask a Question</a>
+          <a class="btn outline" href="index.html">Back to Home</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p class="footer-text">© <span id="year"></span> MedBridge Clinic</p>
+      <p class="footer-text"><a class="footer-link" href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
